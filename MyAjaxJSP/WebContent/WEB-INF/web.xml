@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>MyAjaxJSP</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>*.jsp</url-pattern>
+  		<include-prelude>/WEB-INF/tagslib.jsp</include-prelude>
+  	</jsp-property-group>
+  </jsp-config>
+  
+  
+  <servlet>
+    <servlet-name>BonneAnnee</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.BonneAnnee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BonneAnnee</servlet-name>
+    <url-pattern>/bonneAnnee</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TableMultiplication</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.TableMultiplication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TableMultiplication</servlet-name>
+    <url-pattern>/table</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Addition</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.Addition</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Addition</servlet-name>
+    <url-pattern>/addition</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Calculatrice</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.Calculatrice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Calculatrice</servlet-name>
+    <url-pattern>/calcul</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Personne</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.Personne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Personne</servlet-name>
+    <url-pattern>/personne</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.myajaxjs.servlets.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+</web-app>

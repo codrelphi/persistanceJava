@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+		version="3.1">
+		
+	<!-- Ca s'appelle aussi le descripteur (descriptor) de servlets ou encore descripteur de déploiement. 
+	-->
+	<!--  Comment on décrit l'existence d'une servlet ? -->
+	<!--  mapping = correspondance (en francais) -->
+	
+	<servlet>
+		<servlet-name>Identite</servlet-name>
+		<servlet-class>fr.myagency.servlets.Identite</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Identite</servlet-name>
+		<url-pattern>/infouser</url-pattern>
+		<!-- Comment rendre cette servlet disponible sur la page d'index (/MyAgency/) ? -->
+		<!-- <url-pattern>/</url-pattern> -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AfficherNom</servlet-name>
+		<servlet-class>fr.myagency.servlets.AfficherNom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AfficherNom</servlet-name>
+		<url-pattern>/nom</url-pattern>
+		<!-- <url-pattern>/afficheNom</url-pattern> -->
+	</servlet-mapping>
+	
+	
+	
+</web-app>
